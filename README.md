@@ -8,5 +8,5 @@
 [https://github.com/softleader/softleader-microservice-wiki/wiki/React](https://github.com/softleader/softleader-microservice-wiki/wiki/React)
 
 ## Redux
-[https://github.com/reactjs/redux/tree/master/docs](https://github.com/reactjs/redux/tree/master/docs)
+[https://github.com/reactjs/redux/tree/master/docs](https://github.com/reactjs/redux/tree/master/docs)  
 [https://github.com/softleader/softleader-microservice-wiki/wiki/Redux](https://github.com/softleader/softleader-microservice-wiki/wiki/Redux)
