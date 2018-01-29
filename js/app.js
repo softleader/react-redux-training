@@ -4,16 +4,16 @@ import {applyMiddleware, combineReducers, createStore} from 'redux';
 import {Provider} from 'react-redux';
 import thunkMiddleware from 'redux-thunk';
 import {createLogger} from 'redux-logger';
-// import {reducers} from './reducers/reducers';
-// import TodoList from "./containers/TodoList";
+import {reducers} from './reducers/reducers';
+import TodoList from "./containers/TodoList";
 
 const store = createStore(
-  // combineReducers({
-  //   ...reducers
-  // }),
+  combineReducers({
+    ...reducers
+  }),
   applyMiddleware(
     thunkMiddleware,
-    createLogger())
+    createLogger())  //紀錄log
 );
 
 window.app = {};
@@ -23,10 +23,10 @@ app.create = (dom) => {
 };
 
 app.run = (dom) => {
-  // ReactDOM.render(
-  //   <Provider store={store}>
-  //     <TodoList/>
-  //   </Provider>,
-  //   dom
-  // )
+  ReactDOM.render(
+    <Provider store={store}>
+      <TodoList/>
+    </Provider>,
+    dom
+  )
 };
